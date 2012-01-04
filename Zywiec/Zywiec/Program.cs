@@ -1,6 +1,8 @@
 using System;
 using System.Linq;
 
+//kolejny komcio
+
 namespace Zywiec
 {
     public class Program
