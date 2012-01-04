@@ -6,6 +6,11 @@ namespace Zywiec
     {
         public static void Main()
         {
+            int a;
+
+            for(int i=0; i<3; i++)
+                Console.WriteLine("Linia jakas");
+
             Console.WriteLine("dupa");
             Console.ReadLine();
         }
