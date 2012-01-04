@@ -1,6 +1,7 @@
 using System;
 using System.Linq;
 
+// tylko komentarz
 //kolejny komcio
 
 namespace Zywiec
