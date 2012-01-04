@@ -9,3 +9,5 @@ dupna zmiana
 jaka zmiana, dodana ostatnia linijka
 
 zmiana z brancha 3!
+
+zmiana kolejna z brancha 3!
