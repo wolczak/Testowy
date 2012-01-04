@@ -9,5 +9,10 @@ namespace Zywiec
             Console.WriteLine("dupa");
             Console.ReadLine();
         }
+
+        public int GetRandomNumber()
+        {
+            return 10;
+        }
     }
 }
