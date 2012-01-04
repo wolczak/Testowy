@@ -10,19 +10,16 @@ namespace Zywiec
             Console.ReadLine();
         }
 
+<<<<<<< HEAD
         public int GetRandomNumber()
         {
             return 10;
         }
-
+=======
 		public static foo()
 		{
 			Console.WriteLine("dupa");
 		}
-
-        public string GetRandomWord()
-        {
-            return "Jedrek";
-        }
+>>>>>>> 16e12a9b4ca58180fc5b9b4642b4d4f0b8417641
     }
 }
