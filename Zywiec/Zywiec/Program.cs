@@ -14,5 +14,10 @@ namespace Zywiec
         {
             return 10;
         }
+
+		public static foo()
+		{
+			Console.WriteLine("dupa");
+		}
     }
 }
