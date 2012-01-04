@@ -9,5 +9,10 @@ namespace Zywiec
             Console.WriteLine("dupa");
             Console.ReadLine();
         }
+
+		public static foo()
+		{
+			Console.WriteLine("dupa");
+		}
     }
 }
