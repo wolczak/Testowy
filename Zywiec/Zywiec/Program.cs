@@ -15,7 +15,7 @@ namespace Zywiec
             return 10;
         }
 
-		public static foo()
+		public static void foo()
 		{
 			Console.WriteLine("dupa");
 		}
