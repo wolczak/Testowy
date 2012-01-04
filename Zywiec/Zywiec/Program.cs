@@ -1,4 +1,5 @@
 using System;
+using System.Linq;
 
 namespace Zywiec
 {
@@ -20,10 +21,17 @@ namespace Zywiec
             return 10;
         }
 
-		public static void foo()
-		{
-			Console.WriteLine("dupa");
-		}
+        public static bool foo()
+        {
+            Console.WriteLine("dupa");
+            
+            foreach(var i in Enumerable.Range(0, 100))
+            {
+                Console.WriteLine((i*i).ToString());
+            }
+
+            return false;
+        }
 
         public string GetRandomWord()
         {
