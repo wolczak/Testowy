@@ -1,3 +1,8 @@
 *.suo
-bin/*
-obj/*
+*.user
+*.exe
+*/bin/
+*/obj/
+obj/
+bin/
+*/_ReSharper*
