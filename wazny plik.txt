@@ -7,3 +7,5 @@ Wojtek bierze koksy!
 dupna zmiana
 
 jaka zmiana, dodana ostatnia linijka
+
+zmiana z brancha 3!
