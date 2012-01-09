@@ -1,0 +1,24 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<!-- 
+This template was written to work with NHibernate.Test.
+Copy the template to your NHibernate.Test project folder and rename it in hibernate.cfg.xml and change it 
+for your own use before compile tests in VisualStudio.
+-->
+<!-- This is the System.Data.OracleClient.dll provider for Oracle from MS -->
+<hibernate-configuration  xmlns="urn:nhibernate-configuration-2.2" >
+	<session-factory name="NHibernate.Test">
+		<property name="connection.driver_class">NHibernate.Driver.OracleClientDriver</property>
+    <property name="dialect">NHibernate.Dialect.Oracle10gDialect</property>
+    
+		<property name="connection.connection_string">
+      User ID=aida;Password=FPaida1234;Data Source=win-aida/ORCL
+    </property>
+		<property name="show_sql">true</property>
+    <property name="connection.provider">
+      NHibernate.Connection.DriverConnectionProvider
+    </property>
+
+
+    <mapping assembly="WebTest" />
+	</session-factory>
+</hibernate-configuration>
