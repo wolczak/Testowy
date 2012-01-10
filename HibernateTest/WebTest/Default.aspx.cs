@@ -8,6 +8,7 @@ using NHibernate;
 using NHibernate.Cfg;
 using WebTest.Core;
 using FluentNHibernate.Cfg;
+using FluentNHibernate.Cfg.Db;
 
 namespace WebTest
 {
@@ -15,7 +16,13 @@ namespace WebTest
     {
         private static ISessionFactory CreateSessionFactory()
         {
-            return Fluently.Configure().Mappings(m => m.FluentMappings.AddFromAssemblyOf<Product>()).BuildSessionFactory();
+            return Fluently.Configure()
+                .Database(OracleClientConfiguration.Oracle10.ConnectionString(c => c.FromAppSetting("ConnectionString")))
+                .Mappings(m => m.FluentMappings.AddFromAssemblyOf<Product>()).BuildSessionFactory();
+
+            Configuration config = new Configuration();
+            config.Configure();
+            return config.BuildSessionFactory();
         }
 
         protected void Page_Load(object sender, EventArgs e)
