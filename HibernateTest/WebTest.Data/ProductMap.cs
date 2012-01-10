@@ -21,7 +21,7 @@ namespace WebTest.Data
     {
         public ProductMap()
         {
-                
+            Id(x => x.ID).Column("ID");
         }
     }
 }
