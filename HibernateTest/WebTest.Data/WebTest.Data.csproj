@@ -50,7 +50,7 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
-    <EmbeddedResource Include="Product.hbm.xml" />
+    <None Include="Product.hbm.xml" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\WebTest.Core\WebTest.Core.csproj">

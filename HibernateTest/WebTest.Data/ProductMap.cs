@@ -21,7 +21,10 @@ namespace WebTest.Data
     {
         public ProductMap()
         {
+            Table("PRODUCT");
             Id(x => x.ID).Column("ID");
+            Map(x => x.Name);
+            Map(x => x.Quantity).Column("QUANTITY");
         }
     }
 }
