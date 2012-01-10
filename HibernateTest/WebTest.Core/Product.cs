@@ -12,5 +12,9 @@ namespace WebTest.Core
         public virtual string Name { get; set; }
 
         public virtual decimal Quantity { get; set; }
+
+        public virtual decimal PriceID { get; set; }
+
+        public virtual ProductPrice Price { get; set; }
     }
 }

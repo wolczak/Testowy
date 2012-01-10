@@ -1,5 +1,5 @@
 ﻿// -----------------------------------------------------------------------
-// <copyright file="ProductMap.cs" company="">
+// <copyright file="ProductPriceMap.cs" company="">
 // TODO: Update copyright text.
 // </copyright>
 // -----------------------------------------------------------------------
@@ -17,16 +17,13 @@ namespace WebTest.Data
     /// <summary>
     /// TODO: Update summary.
     /// </summary>
-    public class ProductMap : ClassMap<Product>
+    public class ProductPriceMap : ClassMap<ProductPrice>
     {
-        public ProductMap()
+        public ProductPriceMap()
         {
-            Table("PRODUCT");
-            Id(x => x.ID).Column("ID");
-            Map(x => x.Name);
-            Map(x => x.Quantity).Column("QUANTITY");
-            Map(x => x.PriceID);
-            References(x => x.Price).Column("PRICEID");
+            Table("Product_Price");
+            Id(x => x.ID);
+            Map(x => x.Price);
         }
     }
 }

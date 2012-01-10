@@ -35,10 +35,12 @@ namespace WebTest
             var session = sessionFactory.OpenSession();
 
             var list = session.CreateCriteria<Product>().List<Product>();
+            var prices = session.CreateCriteria<ProductPrice>().List<ProductPrice>();
 
             foreach (var l in list)
             {
-                Response.Write(string.Format("{0} | {1:40} | {2} {3}", l.ID, l.Name, l.Quantity, "<br/ >"));
+                string price = l.Price != null ? l.Price.Price.ToString() : "- - -";
+                Response.Write(string.Format("{0} | {1:40} | {2} | {3} | {4}", l.ID, l.Name, l.Quantity, price, "<br/ >"));
             }
         }
     }
